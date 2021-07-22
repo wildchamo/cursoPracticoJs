@@ -102,3 +102,44 @@ if(tipoDeSuscripcion=="Free"){
 }else if(tipoDeSuscripcion=="ExpertPlus"){
     console.log("Tú y alguien más pueden tomar TODOS los cursos de Platzi durante un año");
 } 
+
+
+//que es un ciclo== es un metodo que se realiza hasta que algo pasa o deja de pasar
+
+//que ciclos existen en js== for y while 
+
+//Qué es un ciclo infinito y pq es un problema== es un ciclo que nunca cumple al condición para que se termine
+//es un problema porque agota la memoria del navegador, no tiene sentido tener un ciclo infinito  
+
+//puedes mezclar ciclos y condicionales??== si puedes mezclarlos!
+
+
+for (let i = 0; i < 5; i++) {
+    console.log("El valor de i es: " + i);
+}
+
+let i=0;
+while (i <5) {
+    console.log("El valor de i es: " + i);
+    i++;
+}
+
+
+for (let i = 10; i >= 2; i--) {
+    console.log("El valor de i es: " + i);
+}
+
+
+let i=10;
+while(i>=2){
+    console.log("El valor de i es: " + i);
+    i--;
+}
+
+var pregunta= prompt("cuanto es 2+2?");
+
+if(pregunta== 4){
+    alert("muy bien!")
+}else{
+    alert("vuelve a internarlo")
+}
