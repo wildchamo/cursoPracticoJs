@@ -48,3 +48,19 @@ console.log(nombreCompleto,dineroReal);
 //parametros y argumentos de una función 
 
 //
+
+
+const name = "Juan David";
+const lastname = "Castro Gallego";
+const completeName = name + lastname;
+const nickname = "juandc";
+
+console.log("Mi nombre es " + completeName + ", pero prefiero que me digas " + nickname + ".");
+
+
+function nombreNickname(name,lastname,nickname){
+    const completeName= name+lastname;
+    console.log("Mi nombre es " +completeName+ ",pero prefiero que me digas " + nickname+ ".");
+}
+
+nombreNickname( "Jose", "Luis", "wildChamo");
