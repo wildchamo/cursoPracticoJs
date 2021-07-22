@@ -33,3 +33,18 @@ var nombreCompleto= nombre+apellido;
 var dineroReal= dineroAhorrado-deudas;
 
 console.log(nombreCompleto,dineroReal);
+
+
+//FUNCIONES
+
+//¿Qué es una función?
+
+//es una declaración que te permite reutilizar codigo 
+
+//¿Para que sirve usar una función en tu codigo?
+
+//sirve para no repetir codigo, las funciones hacen la vida mas facil a la hora de programar
+
+//parametros y argumentos de una función 
+
+//
