@@ -143,3 +143,42 @@ if(pregunta== 4){
 }else{
     alert("vuelve a internarlo")
 }
+
+
+//arreglos
+
+//que es un arreglo= es una colección de elementos
+
+//un objeto es una variable que tiene mas de una propiedad
+
+//un arreglo cuando tienes muchos elementos con algo en común y un objeto cuando quieres guardar datos de un objeto
+
+//si se pueden mezclar objetos con arreglos 
+
+const array= ["hola","soy","Jose"];
+
+const primerObjeto=function(array){
+    console.log(array[0]);
+}
+
+primerObjeto(array);
+
+
+const todosLosElementos= function(array){
+    for(i=0;i<array.length;i++){
+        console.log(array[i]);
+    }
+}
+
+todosLosElementos(array);
+
+
+const JoseLuis={
+    nombre:"JoseLuis",
+    apellido:"Bedoya",
+    edad:"19",
+    detalleDelUsuario: function(){
+        console.log("usuario"+ this.nombre, this.apellido,this.edad )
+    } 
+}
+JoseLuis.detalleDelUsuario();
