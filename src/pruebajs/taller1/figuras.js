@@ -38,6 +38,26 @@ console.groupEnd();
 
 console.group("Circulos")
 
+//radio
+
+const radioCirculo= 4;
+
+//diametro
+
+const diametroCirculo= radioCirculo*2;
+
+//pi
+
+const pi= Math.PI;
+
+//circunferencia
+
+const perimetroCirculo= diametro*pi;
+
+
+//area
+
+const areaCirculo= (radioCirculo*radioCirculo)*pi;
 
 
 console.groupEnd();
