@@ -5,8 +5,9 @@ console.group("Cuadrado")
 // console.log("los lados del cuadrado mide: " +ladoCuadrado);
 // const perimetroCuadrado= ladoCuadrado*4;
 
-const ladoCuadrado= prompt("cual es el lado del cuadrado?")
+//const ladoCuadrado= prompt("cual es el lado del cuadrado?")
 
+//parametro es en la declaraciòn de la función. Argumento es lo que le pasas a la función para que haga lo suyo
 function perimetroCuadrado(lado){
     return lado*4;
 }
@@ -34,12 +35,17 @@ console.log(
     ", su base es: "+baseTriangulo +" cm"
     + " y su altura es:"+alturaTriangulo)
     
+function perimetroTriangulo(lado1,lado2,base){
+    return lado1+lado2+base;
+}
 
-const perimetroTriangulo= ladoTriangulo1+ladoTriangulo2+baseTriangulo;
-console.log("el perimetro del triangulo es: "+ perimetroTriangulo);
+//console.log("el perimetro del triangulo es: "+ perimetroTriangulo);
 
-const areaTriangulo = ( baseTriangulo*alturaTriangulo)/2;
-console.log("el area del triangulo es: " +areaTriangulo);
+function areaTriangulo(base,altura){
+ return  ( base*altura)/2;
+}
+
+//console.log("el area del triangulo es: " +areaTriangulo);
 
 console.groupEnd();
 
@@ -53,8 +59,12 @@ console.log("el radio del circulo es :" + radioCirculo)
 
 //diametro
 
-const diametroCirculo= radioCirculo*2;
-console.log("el diametro del circulo es "+ diametroCirculo)
+
+function diametroCirculo(radio){
+    return radio*2;
+}
+//const diametroCirculo= radioCirculo*2;
+//console.log("el diametro del circulo es "+ diametroCirculo)
 
 //pi
 
@@ -62,15 +72,23 @@ const pi= Math.PI;
 
 //circunferencia
 
-const perimetroCirculo= diametroCirculo*pi;
+function perimetroCirculo(radio){
+    const diametro= diametroCirculo(radio);
+    return diametro*pi;
 
-console.log(" el perimetro del circulo es:" +perimetroCirculo)
+}
+
+//const perimetroCirculo= diametroCirculo*pi;
+//console.log(" el perimetro del circulo es:" +perimetroCirculo)
 
 
 //area
 
-const areaCirculo= (radioCirculo*radioCirculo)*pi;
+function areaCirculo(radio){
+    return (radio*radio)*pi;
+}
 
-console.log("el area del circulo es:" + areaCirculo)
+//const areaCirculo= (radioCirculo*radioCirculo)*pi;
+//console.log("el area del circulo es:" + areaCirculo)
 
 console.groupEnd();
