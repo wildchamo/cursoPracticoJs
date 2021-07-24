@@ -35,9 +35,6 @@ console.log(
     ", su base es: "+baseTriangulo +" cm"
     + " y su altura es:"+alturaTriangulo)
     
-function perimetroTriangulo(lado1,lado2,base){
-    return lado1+lado2+base;
-}
 
 //console.log("el perimetro del triangulo es: "+ perimetroTriangulo);
 
@@ -116,6 +113,9 @@ function calcularAreaCuadrado(){
 function areaTrianguloI(lado1,lado2,base){
     return Math.sqrt ((lado1*lado1)-((base*base)/4));
 }
+function perimetroTriangulo(lado1,lado2,base){
+    return (lado1+lado2)+base;
+}
 
 
 
@@ -144,5 +144,23 @@ function calcularAreaTriangulo(){
 //perimetro
 
 function calcularPerimetroTriangulo(){
+    const input1= document.getElementById("InputTrianguloI");
+    const input2= document.getElementById("InputTrianguloI2");
+    const input3= document.getElementById("BaseTrianguloI");
+
+    lado1= input1.value;
+    lado2= input2.value;
+    base= input3.value;
+
+    var perimetro=null;
+
+    if(lado1===lado2){
+        perimetro= perimetroTriangulo(lado1,lado2,base);
+        alert(perimetro);
+        } else{
+            alert( "no se puede calcular el perimentro del triangulo, sus lados no son iguales");
+        }
+    
+
 
 }
