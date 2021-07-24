@@ -11,14 +11,14 @@ console.group("Cuadrado")
 function perimetroCuadrado(lado){
     return lado*4;
 }
-console.log("el perimetro del cuadrado es: " +perimetroCuadrado(ladoCuadrado));
+//console.log("el perimetro del cuadrado es: " +perimetroCuadrado(ladoCuadrado));
 
 // const areaCuadrado= ladoCuadrado* ladoCuadrado;
 
 function areaCuadrado(lado){
     return lado*lado;
 }
-console.log("el área del cuadrado es: "+areaCuadrado(ladoCuadrado) +" centimetros cuadrados");
+//console.log("el área del cuadrado es: "+areaCuadrado(ladoCuadrado) +" centimetros cuadrados");
 
 console.groupEnd();
 //Código del triangulo
@@ -92,3 +92,16 @@ function areaCirculo(radio){
 //console.log("el area del circulo es:" + areaCirculo)
 
 console.groupEnd();
+
+function calcularPerimetroCuadrado(){
+    const input= document.getElementById("InputCuadrado");
+    const value=input.value;
+
+    const perimetro= perimetroCuadrado(value);
+
+    alert ("el perimetro del cuadrado es:" +perimetro);
+}
+
+function calcularAreaCuadrado(){
+
+}
