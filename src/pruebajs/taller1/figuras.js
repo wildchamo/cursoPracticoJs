@@ -103,5 +103,17 @@ function calcularPerimetroCuadrado(){
 }
 
 function calcularAreaCuadrado(){
+    const input= document.getElementById("InputCuadrado");
+    const value=input.value;
+
+    const area= areaCuadrado(value);
 
 }
+
+
+//triangulo isoceles
+
+//area
+
+
+//perimetro
