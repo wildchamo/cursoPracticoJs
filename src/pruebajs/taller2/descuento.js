@@ -3,12 +3,12 @@ const descuento=18;
 
 
 
-console.log({
-    precioOriginal,
-    descuento,
-    porcentajeConDescuento,
-    precioConDescuento
-});
+// console.log({
+//     precioOriginal,
+//     descuento,
+//     porcentajeConDescuento,
+//     precioConDescuento
+// });
 
 
 function calcularPrecioConDescuento(precio,descuento){
