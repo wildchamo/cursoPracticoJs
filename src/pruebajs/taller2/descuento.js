@@ -19,3 +19,12 @@ function calcularPrecioConDescuento(precio,descuento){
 
     return precioConDescuento;
 }
+
+function OnclickCalcularPrecioConDescuento(){
+    const inputPrice= document.getElementById('inputPrice');
+    const price= inputPrice.value;
+    const inputDiscount= document.getElementById('inputDiscount');
+    const discount= inputDiscount.value;
+
+    
+}
