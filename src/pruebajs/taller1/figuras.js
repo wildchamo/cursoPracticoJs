@@ -113,7 +113,36 @@ function calcularAreaCuadrado(){
 
 //triangulo isoceles
 
-//area
+function areaTrianguloI(lado1,lado2,base){
+    return Math.sqrt ((lado1*lado1)-((base*base)/4));
+}
 
+
+
+
+//area
+function calcularAreaTriangulo(){
+    const input1= document.getElementById("InputTrianguloI");
+    const input2= document.getElementById("InputTrianguloI2");
+    const input3= document.getElementById("BaseTrianguloI");
+
+    lado1= input1.value;
+    lado2= input2.value;
+    base= input3.value;
+
+    var area=null;
+
+    if(lado1===lado2){
+    area= areaTrianguloI(lado1,lado2,base);
+    alert(area) ;
+    } else{
+        alert( "no se puede calcular el area del triangulo, sus lados no son iguales");
+    }
+
+}
 
 //perimetro
+
+function calcularPerimetroTriangulo(){
+
+}
