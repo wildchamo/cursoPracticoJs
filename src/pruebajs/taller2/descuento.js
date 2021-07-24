@@ -21,10 +21,11 @@ function calcularPrecioConDescuento(precio,descuento){
 }
 
 function OnclickCalcularPrecioConDescuento(){
-    const inputPrice= document.getElementById('inputPrice');
+    const inputPrice= document.getElementById('InputPrice');
     const price= inputPrice.value;
-    const inputDiscount= document.getElementById('inputDiscount');
+    const inputDiscount= document.getElementById('InputDiscount');
     const discount= inputDiscount.value;
-
     
+    const precioDescuento= calcularPrecioConDescuento(price,discount);
+
 }
