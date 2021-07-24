@@ -28,4 +28,8 @@ function OnclickCalcularPrecioConDescuento(){
     
     const precioDescuento= calcularPrecioConDescuento(price,discount);
 
+    const result= document.getElementById("resultPrice");
+
+    result.innerText="El precio del producto con descuento es $" + precioDescuento;
+ 
 }
