@@ -7,8 +7,21 @@ const salariosColSorted=salariosCol.sort(function(salarioA,salarioB){
 });
 
 function esPar(numero){
-    if(numero%2 ===0){
-        return true;
+    return (numero%2 === 0)
+}
+
+function medianaSalariosCol(lista){
+    const mitad= parseInt(lista.length/2);
+    
+    if(esPar(lista.length)){
+        const personaMitad1= lista[mitad-1];
+        const personaMitad2= lista[mitad];
+
+
+        
+    }else{
+        const personaMitad=lista[mitad];
+        return personaMitad;
     }
 }
 
