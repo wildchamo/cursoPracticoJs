@@ -27,3 +27,8 @@ function calcularMediaAritmetica(lista){
     
     return promedioLista;
 }
+
+
+
+//mediana
+
