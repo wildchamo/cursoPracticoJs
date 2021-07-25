@@ -17,7 +17,7 @@ lista3.map(
 
 const lista3Array = Object.entries(lista3Count).sort(
     function (valorAcumulado, nuevoValor) {
-        return valorAcumulado[1] - nuevoValor[1]
+        return  valorAcumulado[1] - nuevoValor[1]
     }
 );
 
