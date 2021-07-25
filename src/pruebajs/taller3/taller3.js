@@ -11,3 +11,7 @@ for(let i=0; i<lista1.length; i++){
     sumaLista1 += lista1[i];
 }
 console.log(sumaLista1);
+
+
+const promedioLista1= sumaLista1/lista1.length;
+console.log(promedioLista1);
