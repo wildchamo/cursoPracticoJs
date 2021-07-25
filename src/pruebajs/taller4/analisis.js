@@ -4,4 +4,11 @@ const salariosCol= colombia.map(function(persona){
 
 const salariosColSorted=salariosCol.sort(function(salarioA,salarioB){
     return salarioA-salarioB;
-})
+});
+
+function esPar(numero){
+    if(numero%2 ===0){
+        return true;
+    }
+}
+
