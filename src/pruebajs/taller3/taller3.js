@@ -5,13 +5,17 @@ const lista1= [
     500
 ]
 
-let sumaLista1= 0;
 
-for(let i=0; i<lista1.length; i++){
-    sumaLista1 += lista1[i];
+
+
+function calcularMediaAritmetica(lista){
+    let sumaLista=0;
+    for(let i=0; i<lista.length; i++){
+        sumaLista += lista[i];
+    }
+    console.log(sumaLista);
+    
+    const promedioLista= sumaLista/lista.length;
+    
+    console.log(promedioLista);
 }
-console.log(sumaLista1);
-
-
-const promedioLista1= sumaLista1/lista1.length;
-console.log(promedioLista1);
